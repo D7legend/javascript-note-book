@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Madlibs</title>
+</head>
+<body>
+  <h1>Madlibs</h1>
+  <br>
+  <label for="">
+    Name: <br>
+    <input type="text" id="myname"> <br>
+  </label>
+
+  <label for="">
+    Another name: <br>
+    <input type="text" id="anothername"> <br>
+  </label>
+
+  <label for="">
+    Vehicle: <br>
+    <input type="text" id="myvehicle"> <br>
+  </label>
+
+  <label for="">
+    Adjective: <br>
+    <input type="text" id="myadjective"> <br>
+  </label>
+
+        <label for="">
+    Verb: <br>
+    <input type="text" id="myverb"> <br>
+  </label>
+
+        <label for="">
+    Animal: <br>
+    <input type="text" id="myanimal"> <br>
+  </label>
+
+        <label for="">
+    Place: <br>
+    <input type="text" id="myplace"> <br>
+  </label>
+
+        <label for="">
+    Planet: <br>
+    <input type="text" id="myplanet"> <br>
+  </label>
+
+        <label for="">
+    Thing: <br>
+    <input type="text" id="mything"> <br>
+  </label>
+
+   <br> <button id="mybutton">Submit</button>
+  
+  <p><span id="name1">...</span> and <span id="anothername2">...</span> went to <span id="planet2">...</span> in search of <span id="thing2">...</span>. They travelled on their <span id="vehicle2">...</span>. Once they reached, they started <span id="verb2">...</span> everywhere. Suddenly they were stopped by a <span id="animal2">...</span>. It was so <span id="adjective2">...</span> that they decided to bring it back to 
+  <span id="place2">...</span>. </p>
+
+<script>
+  function generateMadlib() {
+    name1.textContent = myname.value;
+    anothername2.textContent = anothername.value;
+    planet2.textContent = myplanet.value;
+    thing2.textContent = mything.value;
+    vehicle2.textContent = myvehicle.value;
+    verb2.textContent = myverb.value;
+    animal2.textContent = myanimal.value;
+    adjective2.textContent = myadjective.value;
+    place2.textContent = myplace.value;
+  }
+  mybutton.onclick = generateMadlib;
+</script>
+</body>
+</html>

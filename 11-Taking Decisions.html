@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taking Decisions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<label for="">
+  <input type="checkbox" name="" id="myCheckbox">
+  Green
+</label>
+
+<br>
+<label for="">
+<input type="checkbox" name="" id="myCheckBox2">
+Big
+</label>
+
+<br>
+<h1 id="myH12">Green is good</h1>
+
+<script>
+  function sizeHandler () {
+     myH12.classList.add('big');
+  }
+
+  
+
+  function colorChanger () {
+    if (myCheckbox.checked) {
+     myH12.classList.add('green');
+    }
+      
+    }
+
+  
+
+  myCheckBox2.onclick = sizeHandler;
+  myCheckbox.onclick = colorChanger;
+
+</script>
+</body>
+</html>

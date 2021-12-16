@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>live update</title>
+</head>
+<body>
+  <img src="https://miro.medium.com/max/1400/1*YWVxqyJjpz_B4cNVOxklbA.png" alt="spiderman image" style="width: 400px;">
+  <h1>
+    The real name of spiderman is <span id="Myspan">...</span>
+  </h1>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Spiderman.JPG/800px-Spiderman.JPG" alt="spiderman image">
+  <br>
+  <input type="text" id="myinput">
+  <script>
+    function eventHandler() {
+     Myspan.textContent =  myinput.value;
+    }
+
+    myinput.oninput = eventHandler;
+  </script>
+</body>
+</html>
